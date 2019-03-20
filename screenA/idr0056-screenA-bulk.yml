@@ -1,0 +1,4 @@
+---
+target: "Screen:name:idr0056-stojic-lncrnas/screenA"
+include: "../../bulk.yml"
+path: "idr0056-screenA-plates.tsv"
