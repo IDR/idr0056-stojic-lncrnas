@@ -1,0 +1,30 @@
+---
+channels:
+    1:
+        active: true
+        color: FF0000
+        end: 187.0
+        label: alpha-tubulin (microtubule cytoskeleton)
+        start: 0.0
+    2:
+        active: true
+        color: 0000FF
+        end: 342.0
+        label: CEP215/CDK5RAP272 (centrosomes)
+        start: 0.0
+    3:
+        active: true
+        color: 0000FF
+        end: 117.0
+        label: Alexa-Fluor 568 Phalloidin (actin cytoskeleton)
+        start: 1.0
+    4:
+        active: false
+        color: FF0000
+        end: 106.0
+        label: Hoechst (DNA)
+        start: 0.0
+greyscale: false
+t: 1
+version: 2
+z: 1
