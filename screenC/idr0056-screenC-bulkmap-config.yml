@@ -1,5 +1,5 @@
 ---
-name: idr0056-stojic-lncrnas/screen3
+name: idr0056-stojic-lncrnas/screenC
 version: 1
 
 defaults:
@@ -11,13 +11,13 @@ defaults:
     omitempty: yes
 
 columns:
-    - name: Sequence_1
+    - name: siRNA Sequence_1
       include: yes
-    - name: Sequence_2
+    - name: siRNA Sequence_2
       include: yes
-    - name: Sequence_3
+    - name: siRNA Sequence_3
       include: yes
-    - name: Sequence_4
+    - name: siRNA Sequence_4
       include: yes
     - name: Reagent Design Gene Annotation Build
       clientname: Gene Annotation Build
@@ -25,8 +25,6 @@ columns:
     - name: Control Type
       include: yes
     - name: Control Comments
-      include: yes
-    - name: Comments
       include: yes
 
 ######################################################################
@@ -43,7 +41,7 @@ columns:
     - group:
           namespace: openmicroscopy.org/mapr/cell_line
           columns:
-              - name: Characteristics [Cell Line or Strain]
+              - name: Characteristics [Cell Line]
                 clientname: Cell Line
                 include: yes
 
