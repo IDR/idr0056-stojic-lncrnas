@@ -11,13 +11,13 @@ defaults:
     omitempty: yes
 
 columns:
-    - name: siRNA Sequence_1
+    - name: siRNA Sequence 1
       include: yes
-    - name: siRNA Sequence_2
+    - name: siRNA Sequence 2
       include: yes
-    - name: siRNA Sequence_3
+    - name: siRNA Sequence 3
       include: yes
-    - name: siRNA Sequence_4
+    - name: siRNA Sequence 4
       include: yes
     - name: Reagent Design Gene Annotation Build
       clientname: Gene Annotation Build
