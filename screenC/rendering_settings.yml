@@ -8,7 +8,7 @@ channels:
         start: 0.0
     2:
         active: true
-        color: 0000FF
+        color: 00FF00
         end: 342.0
         label: gamma-tubulin (centrosomes)
         start: 0.0
@@ -20,7 +20,7 @@ channels:
         start: 1.0
     4:
         active: false
-        color: FF0000
+        color: FFFFFF
         end: 106.0
         label: Hoechst (DNA)
         start: 0.0
