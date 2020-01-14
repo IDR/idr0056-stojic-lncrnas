@@ -1,0 +1,77 @@
+---
+name: idr0056-stojic-lncrnas/screenC
+version: 1
+
+defaults:
+    include: no
+    type: string
+    split: ","
+    includeclient: yes
+    visible: yes
+    omitempty: yes
+
+columns:
+    - name: siRNA Sequence 1
+      include: yes
+    - name: siRNA Sequence 2
+      include: yes
+    - name: siRNA Sequence 3
+      include: yes
+    - name: siRNA Sequence 4
+      include: yes
+    - name: Reagent Design Gene Annotation Build
+      clientname: Gene Annotation Build
+      include: yes
+    - name: Control Type
+      include: yes
+    - name: Control Comments
+      include: yes
+
+######################################################################
+# mapr groups
+######################################################################
+
+    - group:
+          namespace: openmicroscopy.org/mapr/organism
+          columns:
+              - name: Characteristics [Organism]
+                clientname: Organism
+                include: yes
+
+    - group:
+          namespace: openmicroscopy.org/mapr/cell_line
+          columns:
+              - name: Characteristics [Cell Line]
+                clientname: Cell Line
+                include: yes
+
+    - group:
+          namespace: openmicroscopy.org/mapr/gene
+          columns:
+              - name: Gene Identifier
+                include: yes
+                omitempty: no
+              - name: Gene Identifier
+                clientname: Gene Identifier URL
+                clientvalue: "https://www.ncbi.nlm.nih.gov/gene/\
+                  ?term={{ value|urlencode }}"
+                include: yes
+              - name: Gene Symbol
+                include: yes
+                omitempty: no
+
+advanced:
+    well_to_images: yes
+    ignore_missing_primary_key: yes
+
+    primary_group_keys:
+        - namespace: openmicroscopy.org/mapr/organism
+          keys:
+              - Organism
+        - namespace: openmicroscopy.org/mapr/cell_line
+          keys:
+              - Cell Line
+        - namespace: openmicroscopy.org/mapr/gene
+          keys:
+              - Gene Identifier
+              - Gene Symbol
