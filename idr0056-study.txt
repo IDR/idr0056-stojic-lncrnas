@@ -1,0 +1,287 @@
+# STUDY DESCRIPTION SECTION
+# Section with generic information about the study including title, description, publication details (if applicable) and contact details							
+Comment[IDR Study Accession]	idr0056						
+Study Title	Identification of long noncoding RNAs in regulation of cell division	
+Study Type	high content screen						
+Study Type Term Source REF	EFO						
+Study Type Term Accession	EFO_0007550						
+Study Description	Long noncoding RNAs (lncRNAs) regulate many biological processes and have been implicated in development and disease pathogenesis. The exact function for the large majority of lncRNAs is still unknown. To address whether lncRNAs could play a role in cell division, we combined a microscopy-based high-content RNAi screen with dedicated image analysis workflows to identify lncRNAs that regulate mitotic progression, chromosome segregation and cytokinesis. By targeting over 2000 lncRNAs in HeLa cells, we discovered an assortment of new lncRNAs with unexplored functions in maintenance of genome stability.
+Study Key Words	long noncoding RNAs	cell division	mitosis	cytokinesis	chromosome segregeration		
+Study Organism	Homo sapiens						
+Study Organism Term Source REF	NCBITaxon						
+Study Organism Term Accession	9606						
+Study Screens Number	3						
+Study External URL
+Study BioImage Archive Accession	S-BIAD3					
+Study Public Release Date	2020-03-10						
+							
+# Study Publication							
+Study PubMed ID						
+Study Publication Title	A long noncoding RNA regulates microtubule behaviour during mitosis
+Study Author List	Stojic L, Lun ATL, Mascalchi P, Ernst C, Redmond AM, Mangei J, Cooper S, Barr AR, Taylor C, Franklin VNR, Bakal C, Marioni JC, Odom DT, Gergely F
+Study PMC ID	
+Study DOI	
+
+# Study Contacts							
+Study Person Last Name	Stojic						
+Study Person First Name	Lovorka						
+Study Person Email	lovorka.stojic@cruk.cam.ac.uk	l.stojic@qmul.ac.uk		
+Study Person Address	Cancer Research UK Cambridge Institute, University of Cambridge, Li Ka Shing Centre, Robinson Way, Cambridge CB2 0RE, United Kingdom
+Study Person ORCID	0000-0001-6691-3396					
+Study Person Roles	submitter
+						
+# Study License and Data DOI							
+Study License	CC-BY 4.0						
+Study License URL	https://creativecommons.org/licenses/by/4.0/			
+Study Copyright	Stojic et al						
+Study Data Publisher	University of Dundee						
+Study Data DOI										
+							
+Term Source Name	NCBITaxon	EFO	CMPO	Fbbi	
+Term Source URI	http://purl.obolibrary.org/obo/	http://www.ebi.ac.uk/efo/	http://www.ebi.ac.uk/cmpo/	http://purl.obolibrary.org/obo/
+							
+							
+# SCREEN SECTION												
+# Screen Section containing all information relative to each screen in the study including materials used, protocols names and description, phenotype names and description. 									
+# For multiple screens this section should be repeated.  Copy and paste the whole section below and fill out for the next screen.							
+							
+Screen Number	1						
+Comment[IDR Screen Name]	idr0056-stojic-lncrnas/screenA	
+Screen Sample Type	cell					
+Screen Description	Hela cells were transfected with the human Lincode small interfering RNA (siRNA) library targeting 2231 lncRNAs. Following 48 hr incubation, cells were fixed and processed for immunostaining and subsequent automated image acquisition and analysis. Antibodies targeting CEP215 (to label centrosomes), alpha-tubulin (to label the microtubule cytoskeleton), phalloidin (to label the actin cytoskeleton) and Hoechst (to label nuclei) were used.  10x 384-well plates were used.  The fixation and staining was carried out at the Institute for Cancer Research (ICR, London) using the PerkinElmer Cell:Explorer system coupled to automated liquid handling equipment. Solutions were dispensed using a Multidrop Combi Reagent dispenser (Thermo Fisher Scientific) and aspirated/washed using a Biotek washer with 96 pins. All plates were imaged using the PerkinElmer Opera high-content confocal screening platform with spinning disc. Thirty fields of view per well were captured using a 20x air objective, numerical aperture (NA) 0.45.						
+Screen Size	Plates: 10	5D Images:	Planes:	Average Image Dimension (XYZCT):	Total Tb:		
+Screen Example Images							
+Screen Imaging Method	spinning disk confocal microscopy						
+Screen Imaging Method Term Source REF	Fbbi						
+Screen Imaging Method Term Accession	FBbi_00000253						
+Screen Technology Type	RNAi screen						
+Screen Technology Term Source REF	EFO						
+Screen Technology Term Accession	EFO_0007551							
+Screen Type	primary screen						
+Screen Type Term Source REF	EFO						
+Screen Type Term Accession	EFO_0007556						
+Screen Comments	Screen A and B were used as two independent screens to identify new lncRNAs involved in regulation of cell division.  					
+							
+
+# Library section. The library file should be supplied separately and it should contain  the reagents description including, at the absolute minimum: reagent ID, sequences and position in the layout (= plate + position in the plate)						
+Library File Name	idr0056-screenA-annotation						
+Library File Format	tab-delimited text						
+Library Type	siRNA library				
+Library Type Term Source REF	EFO				
+Library Type Term Accession	EFO_0007564							
+Library Manufacturer	Dharmacon							
+Library Version	The design of this library is based on RefSeq version 54 and the siRNAs are arrayed as SMARTpools.							
+Library Experimental Conditions							
+Library Experimental Conditions Term Source REF						Library Experimental Conditions Term Accession							
+
+Quality Control Description							
+							
+# Protocols							
+Protocol Name	growth protocol	treatment protocol	HCS library protocol	HCS image acquisition and feature extraction protocol	HCS data analysis protocol											
+Protocol Type	growth protocol	treatment protocol	HCS library protocol	HCS image acquisition and feature extraction protocol	HCS data analysis protocol											
+Protocol Type Term Source REF	EFO	EFO	EFO	EFO	EFO											
+Protocol Type Term Accession	EFO_0003789	EFO_0003969	EFO_0007571	EFO_0007572	EFO_0007573
+
+Protocol Description	Growth Protocol - HeLa cells were grown in Dulbecco’s modified Eagle’s medium (Gibco, 41966-029) supplemented with 10% Fetal bovine serum (FBS, Thermo Fisher Scientific, 10500064). Exponentially growing cells were reverse transfected with 20nM of siRNA. An siRNA targeting exon 1 of lncRNA GNG12-AS1 (Silencer select, Life Technologies, S59962) and SMARTpool siRNAs targeting protein-coding gene CKAP5/Ch-TOG (GE Dharmacon, L-006847-00) were also included on each plate. CKAP5/Ch-TOG was used as a positive control as its depletion leads to mitotic delay and increased mitotic index. ECT2 SMARTpool siRNAs (GE Dharmacon, L-006450-00-0005) were used as a positive control only in the third validation screen as its depletion results in multinucleated cells. 48 hr after transfection cells were fixed and stained with appropriate antibodies. 
+
+Treatment Protocol - To redissolve the siRNA in the black 384-well PerkinElmer Cell Carrier plates (10 plates in total), 5 _l of OptiMEM medium (Thermo Fisher Scientific, 31985047) was added. The plates were centrifuged (1 min, 900g) and incubated at room temperature (RT) for 5 min. Lipofectamine RNAimax (Thermo Fisher Scientific, 13778150) was added in OptiMEM medium to a final concentration of 8 _l Lipofectamine to 1 ml OptiMEM medium and incubated at RT for 5 min. 5 _l of OptiMEM/Lipofectamine mix was then added to the plates. Plates were centrifuged and incubated at RT for 20 min. In the meantime, HeLa cells were trypinised and counted using an automated cell counter (Countess, Thermo Fisher Scientific). Cells were centrifuged at 1000g for 4 min, the medium was removed and the cells were resuspended in OptiMEM medium to a final concentration of 2000 cells/well. 10__l of cell suspension was added to the plates, plates were centrifuged and incubated at 37°C for 4 hours, before adding 10 _l of DMEM + 30% FBS + 3% P/S (penicillin/streptomycin, P/S) was added (final concentration 10% FBS, 1% P/S). Plates were centrifuged and incubated at 37°C for 48_hours before fixation. A Multidrop Combi Reagent dispenser (Thermo Fisher Scientific) was used throughout the transfection protocol to ensure even liquid addition. 
+  	
+HCS Library Protocol - For screen A, the plates were fixed by adding an equal volume of pre-warmed (37°C) 8% formaldehyde (Thermo Fischer Scientific, 28908)/PBS solution to the wells and incubated at 37°C for 10 min. The cells were permeabilised with pre-warmed PBS/0.2% Triton X-100 (Acros Organics, 327371000) for 15 min at RT. The cells were then blocked in 1% BSA/PBS for 1 hour at RT. To perform the immunostaining, the cells were incubated with primary antibodies against alpha-tubulin (Dm1alpha_, Sigma, TUB9026), CEP215/CDK5RAP272 and Alexa-Fluor® 568 Phalloidin (Thermo Fisher Scientific, A12380) for 2 hours at RT. The cells were washed three times in 1X PBS and incubated for 1 hour at RT with secondary antibodies Alexa Fluor® 488 (Thermo Fisher Scientific, A21206) and Alexa Fluor® 647 (Thermo Fisher Scientific, A31571). After three washes in 1X PBS, the cells were incubated with 1 µg/ml Hoechst (Sigma, H 33258, diluted in PBS) for 15_min at RT before a final wash in 1X PBS and imaging. For screen B, the same fixation protocol as described for screen A was used. For permeabilization, PBS/0.05% SDS was used for 20 min at RT. Blocking was performed as described above. For the immunostaining, cells were incubated with primary antibodies against gamma-tubulin (Sigma, GTU88) and phospho-histone H3 serine 10 (PHH3, Millipore, 06-570) for 2 hours at RT, washed three times with 1X PBS before incubation with secondary antibodies (Thermo Fisher Scientific, A-31571 and A-21206). After three 1X PBS washes, the cells were stained with alpha-tubulin (Serotec, MCA78G) and incubated with secondary antibody (Thermo Fisher Scientific, A-21434). All primary and secondary antibodies were diluted in 1% BSA/PBS. The third-pass validation screen was performed in two replicates with four technical replicates using the top 25 candidates from each of the categories (mitotic progression, cytokinesis) using the same antibodies as in screen B. 
+
+HCS Image Acquisition and Feature Extraction Protocol - All image analysis was performed using custom workflows created with the Columbus software (PerkinElmer). Several output parameters were evaluated from high content images: mitotic index (number of cells in mitosis), multinucleation index (number of multinucleated cells), number of viable cells, number of chromosome segregation errors (chromatin bridges and lagging chromatids) and number of cells with cytokinetic bridges .These are defined in more detail below: 1) Mitotic and multinucleation index: Nuclei were first segmented using Hoechst staining (which defines the total cell number). The false positives (e.g., dead cells) were discarded based on the nucleus area, alpha-tubulin and gamma-tubulin/CEP215 staining intensity. Multinucleated non-dividing cells were retained as a separate subpopulation using a two-step detection process: binucleated cells were isolated using size, aspect ratio and roundness parameters of close nucleus pairs. Other multinucleated cells were then identified among remaining cells for which alpha- or gamma-tubulin intensity was low in the perinuclear region. Further identification of mitotic cells/stages was accomplished using filters based on Hoechst for the nucleus shape and size, in combination with high PHH3 (screen B) or high alpha-tubulin and low CEP215 staining intensity (screen A). Notably, nuclei of cells in anaphase/telophase stage of mitosis were small, had elongated shape and exhibited low Hoechst integrated intensity (low amount of DNA among mitotic cells). The distance between both nuclei of cells in anaphase/telophase stage was the main criteria to discard two daughter non-mitotic cells (maximum of 0.65 µm and 2.6 µm, respectively). From all these sub-populations, we calculated mitotic and multinucleation index relative to the total number of live cells. 
+2) Chromosome segregation errors: We started from the previous identified subpopulation of cells in anaphase/telophase stage. We filtered cells according to alpha-tubulin staining intensity between nuclei, as cells in anaphase have lower alpha-tubulin intensity compared to the cells in telophase. This allowed us to identify only the cells in anaphase. To calculate the number of anaphase cells with chromosome segregation errors, the inter-nuclei space was used as the measuring area to calculate the remaining Hoechst signal. This captures both chromatin bridges and lagging chromatids.
+3) Number of viable cells: The total number of viable cells was determined after removal of dead cells and cell debris with anaphase and telophase cells counted as one (despite exhibiting two nuclear segments). The same rule was applied for multinucleated cells.
+4) Number of cytokinetic bridges: Cytokinetic bridges were defined as elongated high-intensity objects split into two parts that are positive for alpha-tubulin staining. We used prior segmentation of the cytoplasm and the Spot Finder feature to identify bridge half parts and sorted them as doublets by calculating distance between them. We discarded the false positive candidates based on the shape criteria and gamma-tubulin staining. The final number of cytokinetic bridges was divided by total number of viable cells.
+To minimize the variation in the cell density between different wells among all ten 384-well plates, we divided the output numbers by the total number of cells per well (dead cells were not included). Multinucleated cells were considered to be single cells during counting. The ratios were then normalized between screen plates by calculating the average value per plate and finally the grand average of all ten plates, giving a reference mean ratio. Per-well ratios were scaled so that the per-plate average was equal to the reference. Z-scores (z) were calculated as follows for each parameter:
+z= (x-µ)/σ where x represents the ratio for the feature of interest (e.g., mitotic/multinucleation index), µ represents the reference ratio and σ represents the standard deviation of ratios across wells. 
+										
+							
+# Phenotypes							
+Phenotype Name							
+Phenotype Description							
+Phenotype Score Type							
+Phenotype Term Source REF							
+Phenotype Term Name							
+Phenotype Term Accession							
+							
+# Raw Data Files							
+Raw Image Data Format							
+Raw Image Organization							
+							
+# Feature Level Data Files (give individual file details unless there is one file per well)				Feature Level Data File Name							
+Feature Level Data File Description							
+Feature Level Data File Format							
+Feature Level Data Column Name							
+Feature Level Data Column Type							
+Feature Level Data Column Description							
+							
+#  Processed Data Files							
+Processed Data File Name							
+Processed Data File Format	tab-delimited text						
+Processed Data File Description						
+Processed Data Column Name				
+Processed Data Column Type				
+Processed Data Column Annotation Level						
+Processed Data Column Description					
+Processed Data Column Link To Library File		
+
+
+Screen Number	2						
+Comment[IDR Screen Name]	idr0056-stojic-lncrnas/screenB	
+Screen Sample Type	cell					
+Screen Description	Hela cells were transfecetd with the human Lincode small interfering RNA (siRNA) library targeting 2231 lncRNAs. Following 48 hr incubation, cells were fixed and processed for immunostaining and subsequent automated image acquisition and analysis.  In screen B, phospho-histone H3 (PHH3; to specifically label mitotic cells), alpha-tubulin, gamma-tubulin (to label centrosomes) and Hoechst was used. 10x 384-well plates were used.  The fixation and staining for both screen A and B  was carried out at the Institute for Cancer Research (ICR, London) using the PerkinElmer Cell:Explorer system coupled to automated liquid handling equipment. Solutions were dispensed using a Multidrop Combi Reagent dispenser (Thermo Fisher Scientific) and aspirated/washed using a Biotek washer with 96 pins. All plates were imaged using the PerkinElmer Opera high-content confocal screening platform with spinning disc. Thirty fields of view per well were captured using a 20x air objective, numerical aperture (NA) 0.45.						
+Screen Size	Plates: 10	5D Images:	Planes:	Average Image Dimension (XYZCT):	Total Tb:		
+Screen Example Images							
+Screen Imaging Method	spinning disk confocal microscopy						
+Screen Imaging Method Term Source REF	Fbbi						
+Screen Imaging Method Term Accession	FBbi_00000253						
+Screen Technology Type	RNAi screen						
+Screen Technology Term Source REF	EFO						
+Screen Technology Term Accession	EFO_0007551							
+Screen Type	primary screen						
+Screen Type Term Source REF	EFO						
+Screen Type Term Accession	EFO_0007556						
+Screen Comments	Screen A and B were used as two independent screens to identify new lncRNAs involved in regulation of cell division.  			
+							
+
+# Library section. The library file should be supplied separately and it should contain  the reagents description including, at the absolute minimum: reagent ID, sequences and position in the layout (= plate + position in the plate)						
+Library File Name	idr0056-screenB-annotation					
+Library File Format	tab-delimited text						
+Library Type	siRNA library				
+Library Type Term Source REF	EFO				
+Library Type Term Accession	EFO_0007564							
+Library Manufacturer	Dharmacon							
+Library Version	The design of this library is based on RefSeq version 54 and the siRNAs are arrayed as SMARTpools.  							
+Library Experimental Conditions							
+Library Experimental Conditions Term Source REF						Library Experimental Conditions Term Accession							
+
+Quality Control Description							
+							
+# Protocols							
+Protocol Name	growth protocol	treatment protocol	HCS library protocol	HCS image acquisition and feature extraction protocol	HCS data analysis protocol											
+Protocol Type	growth protocol	treatment protocol	HCS library protocol	HCS image acquisition and feature extraction protocol	HCS data analysis protocol											
+Protocol Type Term Source REF	EFO	EFO	EFO	EFO	EFO											
+Protocol Type Term Accession	EFO_0003789	EFO_0003969	EFO_0007571	EFO_0007572	EFO_0007573
+
+Protocol Description	Growth Protocol - HeLa cells were grown in Dulbecco’s modified Eagle’s medium (Gibco, 41966-029) supplemented with 10% Fetal bovine serum (FBS, Thermo Fisher Scientific, 10500064). Exponentially growing cells were reverse transfected with 20nM of siRNA. An siRNA targeting exon 1 of lncRNA GNG12-AS1 (Silencer select, Life Technologies, S59962) and SMARTpool siRNAs targeting protein-coding gene CKAP5/Ch-TOG (GE Dharmacon, L-006847-00) were also included on each plate. CKAP5/Ch-TOG was used as a positive control as its depletion leads to mitotic delay and increased mitotic index. ECT2 SMARTpool siRNAs (GE Dharmacon, L-006450-00-0005) were used as a positive control only in the third validation screen as its depletion results in multinucleated cells. 48 hr after transfection cells were fixed and stained with appropriate antibodies. 
+
+Treatment Protocol - To redissolve the siRNA in the black 384-well PerkinElmer Cell Carrier plates (10 plates in total), 5 _l of OptiMEM medium (Thermo Fisher Scientific, 31985047) was added. The plates were centrifuged (1 min, 900g) and incubated at room temperature (RT) for 5 min. Lipofectamine RNAimax (Thermo Fisher Scientific, 13778150) was added in OptiMEM medium to a final concentration of 8 _l Lipofectamine to 1 ml OptiMEM medium and incubated at RT for 5 min. 5 _l of OptiMEM/Lipofectamine mix was then added to the plates. Plates were centrifuged and incubated at RT for 20 min. In the meantime, HeLa cells were trypinised and counted using an automated cell counter (Countess, Thermo Fisher Scientific). Cells were centrifuged at 1000g for 4 min, the medium was removed and the cells were resuspended in OptiMEM medium to a final concentration of 2000 cells/well. 10__l of cell suspension was added to the plates, plates were centrifuged and incubated at 37°C for 4 hours, before adding 10 _l of DMEM + 30% FBS + 3% P/S (penicillin/streptomycin, P/S) was added (final concentration 10% FBS, 1% P/S). Plates were centrifuged and incubated at 37°C for 48_hours before fixation. A Multidrop Combi Reagent dispenser (Thermo Fisher Scientific) was used throughout the transfection protocol to ensure even liquid addition. 
+  	
+HCS Library Protocol - For screen A, the plates were fixed by adding an equal volume of pre-warmed (37°C) 8% formaldehyde (Thermo Fischer Scientific, 28908)/PBS solution to the wells and incubated at 37°C for 10 min. The cells were permeabilised with pre-warmed PBS/0.2% Triton X-100 (Acros Organics, 327371000) for 15 min at RT. The cells were then blocked in 1% BSA/PBS for 1 hour at RT. To perform the immunostaining, the cells were incubated with primary antibodies against alpha-tubulin (Dm1alpha_, Sigma, TUB9026), CEP215/CDK5RAP272 and Alexa-Fluor® 568 Phalloidin (Thermo Fisher Scientific, A12380) for 2 hours at RT. The cells were washed three times in 1X PBS and incubated for 1 hour at RT with secondary antibodies Alexa Fluor® 488 (Thermo Fisher Scientific, A21206) and Alexa Fluor® 647 (Thermo Fisher Scientific, A31571). After three washes in 1X PBS, the cells were incubated with 1 µg/ml Hoechst (Sigma, H 33258, diluted in PBS) for 15_min at RT before a final wash in 1X PBS and imaging. For screen B, the same fixation protocol as described for screen A was used. For permeabilization, PBS/0.05% SDS was used for 20 min at RT. Blocking was performed as described above. For the immunostaining, cells were incubated with primary antibodies against gamma-tubulin (Sigma, GTU88) and phospho-histone H3 serine 10 (PHH3, Millipore, 06-570) for 2 hours at RT, washed three times with 1X PBS before incubation with secondary antibodies (Thermo Fisher Scientific, A-31571 and A-21206). After three 1X PBS washes, the cells were stained with alpha-tubulin (Serotec, MCA78G) and incubated with secondary antibody (Thermo Fisher Scientific, A-21434). All primary and secondary antibodies were diluted in 1% BSA/PBS. The third-pass validation screen was performed in two replicates with four technical replicates using the top 25 candidates from each of the categories (mitotic progression, cytokinesis) using the same antibodies as in screen B.  
+
+HCS Image Acquisition and Feature Extraction Protocol - All image analysis was performed using custom workflows created with the Columbus software (PerkinElmer). Several output parameters were evaluated from high content images: mitotic index (number of cells in mitosis), multinucleation index (number of multinucleated cells), number of viable cells, number of chromosome segregation errors (chromatin bridges and lagging chromatids) and number of cells with cytokinetic bridges .These are defined in more detail below: 1) Mitotic and multinucleation index: Nuclei were first segmented using Hoechst staining (which defines the total cell number). The false positives (e.g., dead cells) were discarded based on the nucleus area, alpha-tubulin and gamma-tubulin/CEP215 staining intensity. Multinucleated non-dividing cells were retained as a separate subpopulation using a two-step detection process: binucleated cells were isolated using size, aspect ratio and roundness parameters of close nucleus pairs. Other multinucleated cells were then identified among remaining cells for which alpha- or gamma-tubulin intensity was low in the perinuclear region. Further identification of mitotic cells/stages was accomplished using filters based on Hoechst for the nucleus shape and size, in combination with high PHH3 (screen B) or high alpha-tubulin and low CEP215 staining intensity (screen A). Notably, nuclei of cells in anaphase/telophase stage of mitosis were small, had elongated shape and exhibited low Hoechst integrated intensity (low amount of DNA among mitotic cells). The distance between both nuclei of cells in anaphase/telophase stage was the main criteria to discard two daughter non-mitotic cells (maximum of 0.65 µm and 2.6 µm, respectively). From all these sub-populations, we calculated mitotic and multinucleation index relative to the total number of live cells. 
+2) Chromosome segregation errors: We started from the previous identified subpopulation of cells in anaphase/telophase stage. We filtered cells according to alpha-tubulin staining intensity between nuclei, as cells in anaphase have lower alpha-tubulin intensity compared to the cells in telophase. This allowed us to identify only the cells in anaphase. To calculate the number of anaphase cells with chromosome segregation errors, the inter-nuclei space was used as the measuring area to calculate the remaining Hoechst signal. This captures both chromatin bridges and lagging chromatids.
+3) Number of viable cells: The total number of viable cells was determined after removal of dead cells and cell debris with anaphase and telophase cells counted as one (despite exhibiting two nuclear segments). The same rule was applied for multinucleated cells.
+4) Number of cytokinetic bridges: Cytokinetic bridges were defined as elongated high-intensity objects split into two parts that are positive for alpha-tubulin staining. We used prior segmentation of the cytoplasm and the Spot Finder feature to identify bridge half parts and sorted them as doublets by calculating distance between them. We discarded the false positive candidates based on the shape criteria and gamma-tubulin staining. The final number of cytokinetic bridges was divided by total number of viable cells.
+To minimize the variation in the cell density between different wells among all ten 384-well plates, we divided the output numbers by the total number of cells per well (dead cells were not included). Multinucleated cells were considered to be single cells during counting. The ratios were then normalized between screen plates by calculating the average value per plate and finally the grand average of all ten plates, giving a reference mean ratio. Per-well ratios were scaled so that the per-plate average was equal to the reference. Z-scores (z) were calculated as follows for each parameter:
+z= (x-µ)/σ where x represents the ratio for the feature of interest (e.g., mitotic/multinucleation index), µ represents the reference ratio and σ represents the standard deviation of ratios across wells. 
+										
+							
+# Phenotypes							
+Phenotype Name							
+Phenotype Description							
+Phenotype Score Type							
+Phenotype Term Source REF							
+Phenotype Term Name							
+Phenotype Term Accession							
+							
+# Raw Data Files							
+Raw Image Data Format							
+Raw Image Organization							
+							
+# Feature Level Data Files (give individual file details unless there is one file per well)				Feature Level Data File Name							
+Feature Level Data File Description							
+Feature Level Data File Format							
+Feature Level Data Column Name							
+Feature Level Data Column Type							
+Feature Level Data Column Description							
+							
+#  Processed Data Files							
+Processed Data File Name							
+Processed Data File Format	tab-delimited text						
+Processed Data File Description						
+Processed Data Column Name				
+Processed Data Column Type				
+Processed Data Column Annotation Level						
+Processed Data Column Description					
+Processed Data Column Link To Library File	
+
+
+Screen Number	3						
+Comment[IDR Screen Name]	idr0056-stojic-lncrnas/screenC	
+Screen Sample Type	cell					
+Screen Description	The third-pass validation screen was performed in two replicates with four technical replicates using the top 25 candidates from each of the categories (mitotic progression, cytokinesis) using phospho-histone H3 (PHH3; to specifically label mitotic cells), alpha-tubulin (to label the microtubule cytoskeleton), gamma-tubulin (to label centrosomes) and Hoechst (DNA). Correlation coefficients between replicate plates in third screen were calculated by Spearman’s rank correlation (mitotic index = 0.967888, viability = 0.93249, multinucleation index = 0.995897, cytokinetic bridges = 0.898324).  The fixation and staining for the validation screen  was carried out at the Institute for Cancer Research (ICR, London) using the PerkinElmer Cell:Explorer system coupled to automated liquid handling equipment. Solutions were dispensed using a Multidrop Combi Reagent dispenser (Thermo Fisher Scientific) and aspirated/washed using a Biotek washer with 96 pins. All plates were imaged using the PerkinElmer Opera high-content confocal screening platform with spinning disc. Thirty fields of view per well were captured using a 20x air objective, numerical aperture (NA) 0.45.						
+Screen Size	Plates: 10	5D Images:	Planes:	Average Image Dimension (XYZCT):	Total Tb:		
+Screen Example Images							
+Screen Imaging Method	spinning disk confocal microscopy						
+Screen Imaging Method Term Source REF	Fbbi						
+Screen Imaging Method Term Accession	FBbi_00000253						
+Screen Technology Type	RNAi screen						
+Screen Technology Term Source REF	EFO						
+Screen Technology Term Accession	EFO_0007551							
+Screen Type	Validation						
+Screen Type Term Source REF	EFO						
+Screen Type Term Accession	EFO_0007558						
+Screen Comments	Validation screen was used to confirm lcnRNA candidates involved in  mitotic progression and cytokinesis.  								
+
+# Library section. The library file should be supplied separately and it should contain  the reagents description including, at the absolute minimum: reagent ID, sequences and position in the layout (= plate + position in the plate)						
+Library File Name	idr0056-screenC-annotation					
+Library File Format	tab-delimited text						
+Library Type	siRNA library				
+Library Type Term Source REF	EFO				
+Library Type Term Accession	EFO_0007564							
+Library Manufacturer	Dharmacon							
+Library Version	The design of this library is based on RefSeq version 54 and the siRNAs are arrayed as SMARTpools beside GNG12-AS1 (single siRNA targeting exon1 of GNG12-AS1; Stojic et al Nature Communications 2016).						Library Experimental Conditions							
+Library Experimental Conditions Term Source REF						Library Experimental Conditions Term Accession						
+
+	
+Quality Control Description							
+							
+# Protocols							
+Protocol Name	growth protocol	treatment protocol	HCS library protocol	HCS image acquisition and feature extraction protocol	HCS data analysis protocol											
+Protocol Type	growth protocol	treatment protocol	HCS library protocol	HCS image acquisition and feature extraction protocol	HCS data analysis protocol											
+Protocol Type Term Source REF	EFO	EFO	EFO	EFO	EFO											
+Protocol Type Term Accession	EFO_0003789	EFO_0003969	EFO_0007571	EFO_0007572	EFO_0007573
+
+Protocol Description	Growth Protocol - HeLa cells were grown in Dulbecco’s modified Eagle’s medium (Gibco, 41966-029) supplemented with 10% Fetal bovine serum (FBS, Thermo Fisher Scientific, 10500064). Exponentially growing cells were reverse transfected with 20nM of siRNA. An siRNA targeting exon 1 of lncRNA GNG12-AS1 (Silencer select, Life Technologies, S59962) and SMARTpool siRNAs targeting protein-coding gene CKAP5/Ch-TOG (GE Dharmacon, L-006847-00) were also included on each plate. CKAP5/Ch-TOG was used as a positive control as its depletion leads to mitotic delay and increased mitotic index. ECT2 SMARTpool siRNAs (GE Dharmacon, L-006450-00-0005) were used as a positive control only in the third validation screen as its depletion results in multinucleated cells. 48 hr after transfection cells were fixed and stained with appropriate antibodies. 
+
+Treatment Protocol - To redissolve the siRNA in the black 384-well PerkinElmer Cell Carrier plates (10 plates in total), 5 _l of OptiMEM medium (Thermo Fisher Scientific, 31985047) was added. The plates were centrifuged (1 min, 900g) and incubated at room temperature (RT) for 5 min. Lipofectamine RNAimax (Thermo Fisher Scientific, 13778150) was added in OptiMEM medium to a final concentration of 8 _l Lipofectamine to 1 ml OptiMEM medium and incubated at RT for 5 min. 5 _l of OptiMEM/Lipofectamine mix was then added to the plates. Plates were centrifuged and incubated at RT for 20 min. In the meantime, HeLa cells were trypinised and counted using an automated cell counter (Countess, Thermo Fisher Scientific). Cells were centrifuged at 1000g for 4 min, the medium was removed and the cells were resuspended in OptiMEM medium to a final concentration of 2000 cells/well. 10__l of cell suspension was added to the plates, plates were centrifuged and incubated at 37°C for 4 hours, before adding 10 _l of DMEM + 30% FBS + 3% P/S (penicillin/streptomycin, P/S) was added (final concentration 10% FBS, 1% P/S). Plates were centrifuged and incubated at 37°C for 48_hours before fixation. A Multidrop Combi Reagent dispenser (Thermo Fisher Scientific) was used throughout the transfection protocol to ensure even liquid addition. 
+  	
+HCS Library Protocol - For screen A, the plates were fixed by adding an equal volume of pre-warmed (37°C) 8% formaldehyde (Thermo Fischer Scientific, 28908)/PBS solution to the wells and incubated at 37°C for 10 min. The cells were permeabilised with pre-warmed PBS/0.2% Triton X-100 (Acros Organics, 327371000) for 15 min at RT. The cells were then blocked in 1% BSA/PBS for 1 hour at RT. To perform the immunostaining, the cells were incubated with primary antibodies against alpha-tubulin (Dm1alpha_, Sigma, TUB9026), CEP215/CDK5RAP272 and Alexa-Fluor® 568 Phalloidin (Thermo Fisher Scientific, A12380) for 2 hours at RT. The cells were washed three times in 1X PBS and incubated for 1 hour at RT with secondary antibodies Alexa Fluor® 488 (Thermo Fisher Scientific, A21206) and Alexa Fluor® 647 (Thermo Fisher Scientific, A31571). After three washes in 1X PBS, the cells were incubated with 1 µg/ml Hoechst (Sigma, H 33258, diluted in PBS) for 15_min at RT before a final wash in 1X PBS and imaging. For screen B, the same fixation protocol as described for screen A was used. For permeabilization, PBS/0.05% SDS was used for 20 min at RT. Blocking was performed as described above. For the immunostaining, cells were incubated with primary antibodies against gamma-tubulin (Sigma, GTU88) and phospho-histone H3 serine 10 (PHH3, Millipore, 06-570) for 2 hours at RT, washed three times with 1X PBS before incubation with secondary antibodies (Thermo Fisher Scientific, A-31571 and A-21206). After three 1X PBS washes, the cells were stained with alpha-tubulin (Serotec, MCA78G) and incubated with secondary antibody (Thermo Fisher Scientific, A-21434). All primary and secondary antibodies were diluted in 1% BSA/PBS. The third-pass validation screen was performed in two replicates with four technical replicates using the top 25 candidates from each of the categories (mitotic progression, cytokinesis) using the same antibodies as in screen B.  
+
+HCS Image Acquisition and Feature Extraction Protocol - All image analysis was performed using custom workflows created with the Columbus software (PerkinElmer). Several output parameters were evaluated from high content images: mitotic index (number of cells in mitosis), multinucleation index (number of multinucleated cells), number of viable cells, number of chromosome segregation errors (chromatin bridges and lagging chromatids) and number of cells with cytokinetic bridges .These are defined in more detail below: 1) Mitotic and multinucleation index: Nuclei were first segmented using Hoechst staining (which defines the total cell number). The false positives (e.g., dead cells) were discarded based on the nucleus area, alpha-tubulin and gamma-tubulin/CEP215 staining intensity. Multinucleated non-dividing cells were retained as a separate subpopulation using a two-step detection process: binucleated cells were isolated using size, aspect ratio and roundness parameters of close nucleus pairs. Other multinucleated cells were then identified among remaining cells for which alpha- or gamma-tubulin intensity was low in the perinuclear region. Further identification of mitotic cells/stages was accomplished using filters based on Hoechst for the nucleus shape and size, in combination with high PHH3 (screen B) or high alpha-tubulin and low CEP215 staining intensity (screen A). Notably, nuclei of cells in anaphase/telophase stage of mitosis were small, had elongated shape and exhibited low Hoechst integrated intensity (low amount of DNA among mitotic cells). The distance between both nuclei of cells in anaphase/telophase stage was the main criteria to discard two daughter non-mitotic cells (maximum of 0.65 µm and 2.6 µm, respectively). From all these sub-populations, we calculated mitotic and multinucleation index relative to the total number of live cells. 
+2) Chromosome segregation errors: We started from the previous identified subpopulation of cells in anaphase/telophase stage. We filtered cells according to alpha-tubulin staining intensity between nuclei, as cells in anaphase have lower alpha-tubulin intensity compared to the cells in telophase. This allowed us to identify only the cells in anaphase. To calculate the number of anaphase cells with chromosome segregation errors, the inter-nuclei space was used as the measuring area to calculate the remaining Hoechst signal. This captures both chromatin bridges and lagging chromatids.
+3) Number of viable cells: The total number of viable cells was determined after removal of dead cells and cell debris with anaphase and telophase cells counted as one (despite exhibiting two nuclear segments). The same rule was applied for multinucleated cells.
+4) Number of cytokinetic bridges: Cytokinetic bridges were defined as elongated high-intensity objects split into two parts that are positive for alpha-tubulin staining. We used prior segmentation of the cytoplasm and the Spot Finder feature to identify bridge half parts and sorted them as doublets by calculating distance between them. We discarded the false positive candidates based on the shape criteria and gamma-tubulin staining. The final number of cytokinetic bridges was divided by total number of viable cells.
+To minimize the variation in the cell density between different wells among all ten 384-well plates, we divided the output numbers by the total number of cells per well (dead cells were not included). Multinucleated cells were considered to be single cells during counting. The ratios were then normalized between screen plates by calculating the average value per plate and finally the grand average of all ten plates, giving a reference mean ratio. Per-well ratios were scaled so that the per-plate average was equal to the reference. Z-scores (z) were calculated as follows for each parameter:
+z= (x-µ)/σ where x represents the ratio for the feature of interest (e.g., mitotic/multinucleation index), µ represents the reference ratio and σ represents the standard deviation of ratios across wells. 
+										
+							
+# Phenotypes							
+Phenotype Name							
+Phenotype Description							
+Phenotype Score Type							
+Phenotype Term Source REF							
+Phenotype Term Name							
+Phenotype Term Accession							
+							
+# Raw Data Files							
+Raw Image Data Format							
+Raw Image Organization							
+							
+# Feature Level Data Files (give individual file details unless there is one file per well)				Feature Level Data File Name							
+Feature Level Data File Description							
+Feature Level Data File Format							
+Feature Level Data Column Name							
+Feature Level Data Column Type							
+Feature Level Data Column Description							
+							
+#  Processed Data Files							
+Processed Data File Name							
+Processed Data File Format	tab-delimited text						
+Processed Data File Description						
+Processed Data Column Name				
+Processed Data Column Type				
+Processed Data Column Annotation Level						
+Processed Data Column Description					
+Processed Data Column Link To Library File															
