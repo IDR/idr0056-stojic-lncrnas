@@ -13,7 +13,7 @@ Study Organism Term Accession	9606
 Study Screens Number	3						
 Study External URL
 Study BioImage Archive Accession	S-BIAD3					
-Study Public Release Date	2020-03-10						
+Study Public Release Date	2020-03-03						
 							
 # Study Publication							
 Study PubMed ID						
