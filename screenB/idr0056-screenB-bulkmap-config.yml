@@ -50,7 +50,6 @@ columns:
           columns:
               - name: Gene Identifier
                 include: yes
-                omitempty: no
               - name: Gene Identifier
                 clientname: Gene Identifier URL
                 clientvalue: "https://www.ncbi.nlm.nih.gov/gene/\
@@ -58,7 +57,6 @@ columns:
                 include: yes
               - name: Gene Symbol
                 include: yes
-                omitempty: no
 
 advanced:
     well_to_images: yes
