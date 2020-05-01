@@ -16,11 +16,11 @@ Study BioImage Archive Accession	S-BIAD3
 Study Public Release Date	2020-03-03						
 							
 # Study Publication							
-Study PubMed ID						
+Study PubMed ID	32296040				
 Study Publication Title	A long noncoding RNA regulates microtubule behaviour during mitosis
 Study Author List	Stojic L, Lun ATL, Mascalchi P, Ernst C, Redmond AM, Mangei J, Cooper S, Barr AR, Taylor C, Franklin VNR, Bakal C, Marioni JC, Odom DT, Gergely F
-Study PMC ID	
-Study DOI	
+Study PMC ID	PMC7160116
+Study DOI	https://doi.org/10.1038/s41467-020-14978-7	
 
 # Study Contacts							
 Study Person Last Name	Stojic						
